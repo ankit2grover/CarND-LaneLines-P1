@@ -11,30 +11,26 @@
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. 
+
+Please see below the ouput images with a example of solidWhiteCurve.jpg of the steps.
 1. Convert each image into a grayscale.
-    See the grayscale image below of solidWhiteCurve.
-    ![Alt text] [image1]: ./output_images_solidWhiteCurve/gray.jpg "Grayscale"
+    [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/gray.jpg)
   
   
 2. Converted grayscale image into blur for smoothening the image with kernel filter size as 5.
-    See the blur gray image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/blurGray.jpg "BlurGray"
+   [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/blurGray.jpg)
    
 3.  Detected Edges using Canny Edges Detection Algorithm with low threshold and high threshold valus as 50, 150 respectively.
-    See the canny image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/canny.jpg "Canny"
+    [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/canny.jpg)
 
 4.  Masked the Canny image with interested region.
-    See the masked interested region image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/regionMasked.jpg "Region Masked"
+    [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/regionMasked.jpg)
     
 5. Detected interested lines from masked image and marked those lines with red color using Hough Lines Algorithm.
-    See the image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/houghLinesImage.jpg "Hough Lines"
+    [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/houghLinesImage.jpg)
     
 6.  Combined original image with the lines image to see the result image.
-     See the image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/finalImage.jpg "Final Image"
+    [alt tag] (https://github.com/ankit2grover/CarND-LaneLines-P1/blob/master/output_images_solidWhiteCurve/finalImage.jpg)
     
 Similarily, I read each image in the pipeline using pipeline_image_process() function and process each image with same steps as mentioned above. At last, saved each image in the test_output_images directory. I have submitted test_output_images directory also that is containing the result of all the images in the pipeline.
 
