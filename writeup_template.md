@@ -13,7 +13,7 @@
 My pipeline consisted of 5 steps. 
 1. Convert each image into a grayscale.
     See the grayscale image below of solidWhiteCurve.
-    [image1]: ./output_images_solidWhiteCurve/gray.jpg "Grayscale"
+    ![Alt text] [image1]: ./output_images_solidWhiteCurve/gray.jpg "Grayscale"
   
   
 2. Converted grayscale image into blur for smoothening the image with kernel filter size as 5.
